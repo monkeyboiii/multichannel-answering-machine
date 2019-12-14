@@ -5,8 +5,8 @@ module set_main(clk,
                 setting_en,
                 enter_btn,
                 input_val,
-                // seg_en,
-                // seg_out,
+                seg_en,
+                seg_out,
                 // speaker,
                 // alarm_light,
                 // output_light,
@@ -18,23 +18,38 @@ module set_main(clk,
     // input and output
     input clk,setting_en,enter_btn;//ori switch
     input [5:0] input_val;//input the number to save as reg
-    // output [7:0] seg_en, seg_out;
+    output [7:0] seg_en, seg_out;
     // output speaker;
     // output [5:0] output_light;//output the input val via corr switch light
     // output reg alarm_light;
     output reg is_set_over;
     output reg [5:0] num_people,count_seconds,corrcet_point,mistake_point;
+    reg display_enable;
     //
     reg [2:0] cur_set = 0;//0:without setting,1-set the number,2-set the countdown,3-set the add points,4-set the minus points
     
+    //display module
+    setting_tube display(clk,display_enable,input_val,seg_out,seg_en);
     
     // state machine
     always @ (posedge clk) begin
-        if (setting_en == 0) begin
-            is_set_over = 1;
+        if (setting_en == 0 && is_set_over != 1) begin
+            //disable mode
+            is_set_over <= 1;
+            display_enable <= 0;
         end
-        else begin
-            is_set_over = 0;
+        else if (setting_en == 1)begin
+            if (cur_set == 4) begin
+                //set over
+                is_set_over <= 1;
+                display_enable <= 0;
+            end
+            else begin
+                //setting
+                //display the input_val
+                is_set_over <= 0;
+                display_enable <= 1;
+            end
         end
     end
     
@@ -69,7 +84,7 @@ module set_main(clk,
                     cur_set = cur_set + 1;
                 end
                 end else if (cur_set == 4) begin
-                is_set_over = 1;
+                is_set_over <= 1;
             end
         end
     end
