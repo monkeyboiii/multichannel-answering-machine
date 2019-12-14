@@ -1,26 +1,29 @@
 `timescale 1ns / 1ps
 
 // the main entry point
-module set_main(rst,
+module set_main(setting_en,
                 enter_btn,
                 input_val,
+                /*
                 seg_en,
                 seg_out,
                 speaker,
                 alarm_light,
                 output_light,
+                */
                 is_set_over,    //in-state varible
                 num_people,
                 count_seconds,
                 corrcet_point,
                 mistake_point);
     // input and output
-    input rst,enter_btn;//ori switch
+    input setting_en,enter_btn;//ori switch
+    
     input [5:0] input_val;//input the number to save as reg
-    output [7:0] seg_en, seg_out;
-    output speaker;
-    output [5:0] output_light;//output the input val via corr switch light
-    output reg alarm_light;
+    //output [7:0] seg_en, seg_out;
+    //output speaker;
+    //output [5:0] output_light;//output the input val via corr switch light
+    //output reg alarm_light;
     output reg is_set_over;
     output reg [5:0] num_people, count_seconds,corrcet_point,mistake_point;
     //
@@ -29,6 +32,9 @@ module set_main(rst,
     
     // state machine
     always @ (posedge enter_btn) begin
+        if (setting_en == 1) begin
+            pass
+        end
         if (cur_set == 0) begin
             num_people = input_val;
             if (num_people>4 || num_people<2) begin
@@ -60,7 +66,6 @@ module set_main(rst,
             end else if (cur_set == 4) begin
             is_set_over = 1;
         end
-        
     end
     
     /*
