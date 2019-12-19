@@ -1,0 +1,143 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Dec 19 13:27:55 2019
+| Host         : PP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    76 |
+| Unused register locations in slices containing registers |   362 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              26 |           16 |
+| No           | No                    | Yes                    |             697 |          214 |
+| No           | Yes                   | No                     |              16 |           14 |
+| Yes          | No                    | No                     |              34 |           21 |
+| Yes          | No                    | Yes                    |             317 |           81 |
+| Yes          | Yes                   | No                     |               4 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------+--------------------------------------+-------------------------------------------------+------------------+----------------+
+|                 Clock Signal                 |             Enable Signal            |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++----------------------------------------------+--------------------------------------+-------------------------------------------------+------------------+----------------+
+|  st/fd/clkout                                |                                      | st/now_playing_reg[0]_LDC_i_2_n_0               |                1 |              1 |
+|  st/fd/clkout                                |                                      | st/now_playing_reg[1]_LDC_i_2_n_0               |                1 |              1 |
+|  st/fd/clkout                                |                                      | st/now_playing_reg[2]_LDC_i_2_n_0               |                1 |              1 |
+|  st/fd/clkout                                | st/now_playing                       | st/now_playing_reg[0]_LDC_i_1_n_0               |                1 |              1 |
+|  st/fd/clkout                                | st/now_playing                       | st/now_playing_reg[2]_LDC_i_1_n_0               |                1 |              1 |
+|  st/fd/clkout                                | st/now_playing                       | st/now_playing_reg[1]_LDC_i_1_n_0               |                1 |              1 |
+|  rejudge_score_reg[4]_LDC_i_1_n_0            |                                      | rejudge_score_reg[4]_LDC_i_2_n_0                |                1 |              1 |
+|  st/now_playing_reg[0]_LDC_i_1_n_0           |                                      | st/now_playing_reg[0]_LDC_i_2_n_0               |                1 |              1 |
+|  st/now_playing_reg[2]_LDC_i_1_n_0           |                                      | st/now_playing_reg[2]_LDC_i_2_n_0               |                1 |              1 |
+|  st/now_playing_reg[1]_LDC_i_1_n_0           |                                      | st/now_playing_reg[1]_LDC_i_2_n_0               |                1 |              1 |
+|  rejudge_score_reg[5]_LDC_i_1_n_0            |                                      | rejudge_score_reg[5]_LDC_i_2_n_0                |                1 |              1 |
+|  clk_IBUF_BUFG                               |                                      | rejudge_en_i_1_n_0                              |                1 |              1 |
+|  clk_IBUF_BUFG                               |                                      | rejudge_pos_reg_LDC_i_2_n_0                     |                1 |              1 |
+|  setting_tube_u/fd/clkout                    |                                      | setting_tube_u/fd/cnt_reg[26]_0                 |                1 |              1 |
+|  clk_IBUF_BUFG                               |                                      | rejudge_score_reg[2]_LDC_i_1_n_0                |                1 |              1 |
+|  clk_IBUF_BUFG                               |                                      | rejudge_score_reg[0]_LDC_i_1_n_0                |                1 |              1 |
+|  rj_tube/fd_tc/tube_count_reg[0]_P           |                                      | rj_tube/tube_count_reg[1]_LDC_i_1_n_0           |                1 |              1 |
+|  rj_tube/fd_tc/tube_count_reg[0]_P           |                                      | rj_tube/tube_count_reg[2]_LDC_i_2_n_0           |                1 |              1 |
+|  rj_tube/fd_tc/tube_count_reg[0]_P           |                                      | rj_tube/tube_count_reg[1]_LDC_i_2_n_0           |                1 |              1 |
+|  rj_tube/fd_tc/tube_count_reg[0]_P           |                                      | rj_tube/tube_count_reg[2]_LDC_i_1_n_0           |                1 |              1 |
+|  rj_tube/fd_tc/tube_count_reg[0]_P           |                                      | rj_tube/tube_count_reg[0]_LDC_i_2_n_0           |                1 |              1 |
+|  rj_tube/fd_tc/tube_count_reg[0]_P           |                                      | rj_tube/tube_count_reg[0]_LDC_i_1_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                               |                                      | rejudge_score_reg[1]_LDC_i_1_n_0                |                1 |              1 |
+|  rj_tube/tube_count_reg[1]_LDC_i_1_n_0       |                                      | rj_tube/tube_count_reg[1]_LDC_i_2_n_0           |                1 |              1 |
+|  rj_tube/tube_count_reg[2]_LDC_i_1_n_0       |                                      | rj_tube/tube_count_reg[2]_LDC_i_2_n_0           |                1 |              1 |
+|  rj_tube/tube_count_reg[0]_LDC_i_1_n_0       |                                      | rj_tube/tube_count_reg[0]_LDC_i_2_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                               |                                      | rejudge_score_reg[4]_LDC_i_1_n_0                |                1 |              1 |
+|  clk_IBUF_BUFG                               |                                      | rejudge_score_reg[5]_LDC_i_1_n_0                |                1 |              1 |
+|  clk_IBUF_BUFG                               |                                      | rejudge_score_reg[3]_LDC_i_1_n_0                |                1 |              1 |
+|  bt/fd/clkout                                |                                      | bt/fd/clkout_reg_0                              |                1 |              1 |
+|  rejudge_score_reg[3]_LDC_i_1_n_0            |                                      | rejudge_score_reg[3]_LDC_i_2_n_0                |                1 |              1 |
+|  rejudge_pos_reg_LDC_i_1_n_0                 |                                      | rejudge_pos_reg_LDC_i_2_n_0                     |                1 |              1 |
+|  countdown_tube_u/fd/state_reg               |                                      | countdown_tube_u/fd/clkout_reg_0                |                1 |              1 |
+|  rejudge_score_reg[2]_LDC_i_1_n_0            |                                      | rejudge_score_reg[2]_LDC_i_2_n_0                |                1 |              1 |
+|  rejudge_score_reg[0]_LDC_i_1_n_0            |                                      | rejudge_score_reg[0]_LDC_i_2_n_0                |                1 |              1 |
+|  rejudge_score_reg[1]_LDC_i_1_n_0            |                                      | rejudge_score_reg[1]_LDC_i_2_n_0                |                1 |              1 |
+|  clk_IBUF_BUFG                               | set_main_u/u/num_people_reg[0][0]    | score_shift_4/u/trig2_reg_0                     |                2 |              3 |
+|  setting_tube_u/fd_tc/CLK                    |                                      |                                                 |                1 |              3 |
+|  st/fd_tc/CLK                                |                                      | st/fd/clkout_reg_0                              |                2 |              3 |
+|  countdown_tube_u/fd_tc/clkout               |                                      | countdown_tube_u/fd/clkout_reg_0                |                1 |              3 |
+|  rj_tube/fd/CLK                              |                                      | rj_tube/fd/clkout_reg_0                         |                1 |              3 |
+| ~lock                                        |                                      | score_shift_4/u/trig2_reg_0                     |                1 |              3 |
+|  bt/fd_tc/tube_count_reg                     |                                      | bt/fd/clkout_reg_0                              |                1 |              3 |
+|  st/fd/clkout                                | st/scan_cnt[3]_i_1_n_0               | st/fd/clkout_reg_0                              |                3 |              4 |
+|  countdown_tube_u/fd_tc/clkout               | answer_en                            |                                                 |                2 |              4 |
+|  clk_IBUF_BUFG                               | lock                                 | score_shift_4/u/trig2_reg_0                     |                2 |              4 |
+|  player_tube_u/fd_tc/CLK                     | player_tube_u/sw                     |                                                 |                3 |              4 |
+|  clk_IBUF_BUFG                               | rst_n_IBUF                           |                                                 |                2 |              4 |
+|  st/fd_tc/CLK                                | st/sw[3]_i_1__1_n_0                  |                                                 |                4 |              4 |
+|  clk_IBUF_BUFG                               | rst_n_IBUF                           | ss1_en_i_1_n_0                                  |                2 |              4 |
+|  setting_tube_u/fd_tc/CLK                    | setting_tube_u/sw                    |                                                 |                3 |              5 |
+|  rj_tube/fd_tc/tube_count_reg[0]_P           | rj_tube/sw[4]_i_1__0_n_0             |                                                 |                3 |              5 |
+|  setting_tube_u/fd_tc/CLK                    |                                      | setting_tube_u/fd/cnt_reg[26]_0                 |                2 |              6 |
+|  clk_IBUF_BUFG                               | set_main_u/u/count_seconds_reg[0][0] | score_shift_4/u/trig2_reg_0                     |                1 |              6 |
+|  clk_IBUF_BUFG                               | set_main_u/u/corrcet_point_reg[0][0] | score_shift_4/u/trig2_reg_0                     |                4 |              6 |
+|  clk_IBUF_BUFG                               | set_main_u/u/E[0]                    | score_shift_4/u/trig2_reg_0                     |                1 |              6 |
+|  rj_tube/fd_tc/tube_count_reg[0]_P           |                                      | rj_tube/fd/clkout_reg_0                         |                3 |              8 |
+|  st/fd_tc/CLK                                | st/seg_en[7]_i_1__0_n_0              | st/fd/clkout_reg_0                              |                3 |              8 |
+|  countdown_tube_u/fd/state_reg               | countdown_tube_u/seconds             | countdown_tube_u/fd/clkout_reg_0                |                2 |              8 |
+|  clk_IBUF_BUFG                               | score_shift_4/u/wtotal_reg[0]_1[0]   | score_shift_4/u/trig2_reg_0                     |                2 |              8 |
+|  clk_IBUF_BUFG                               | score_shift_4/u/wtotal_reg[0]_0[0]   | score_shift_4/u/trig2_reg_0                     |                1 |              8 |
+|  clk_IBUF_BUFG                               | score_shift_4/u/wtotal_reg[0][0]     | score_shift_4/u/trig2_reg_0                     |                1 |              8 |
+|  clk_IBUF_BUFG                               | final                                |                                                 |                4 |              8 |
+|  clk_IBUF_BUFG                               | score_shift_4/u/wtotal_reg[7][0]     | score_shift_4/u/trig2_reg_0                     |                1 |              8 |
+|  player_tube_u/fd_tc/CLK                     |                                      | player_tube_u/fd_tc/clkout_reg_0                |                2 |              9 |
+|  countdown_tube_u/countdown_beep/fd/beep_reg | countdown_tube_u/countdown_beep/sel  | countdown_tube_u/countdown_beep/fd/clkout_reg_0 |                6 |             21 |
+|  clk_IBUF_BUFG                               |                                      |                                                 |               15 |             23 |
+|  clk_IBUF_BUFG                               |                                      | player_tube_u/fd_tc/clkout_reg_0                |                8 |             28 |
+|  clk_IBUF_BUFG                               |                                      | countdown_tube_u/countdown_beep/fd/clkout_reg_0 |                7 |             28 |
+|  clk_IBUF_BUFG                               |                                      | countdown_tube_u/fd/clkout_reg_0                |               18 |             56 |
+|  clk_IBUF_BUFG                               |                                      | rj_tube/fd/clkout_reg_0                         |               15 |             56 |
+|  clk_IBUF_BUFG                               |                                      | bt/fd/clkout_reg_0                              |               15 |             56 |
+|  clk_IBUF_BUFG                               |                                      | st/fd/clkout_reg_0                              |               17 |             59 |
+|  clk_IBUF_BUFG                               |                                      | setting_tube_u/fd/cnt_reg[26]_0                 |               17 |             59 |
+|  clk_IBUF_BUFG                               | score_shift_4/u/E[0]                 | score_shift_4/u/trig2_reg_0                     |               49 |            216 |
+|  clk_IBUF_BUFG                               |                                      | score_shift_4/u/trig2_reg_0                     |               85 |            300 |
++----------------------------------------------+--------------------------------------+-------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    36 |
+| 3      |                     7 |
+| 4      |                     7 |
+| 5      |                     2 |
+| 6      |                     4 |
+| 8      |                     8 |
+| 9      |                     1 |
+| 16+    |                    11 |
++--------+-----------------------+
+
+

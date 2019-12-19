@@ -1,0 +1,782 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3692 
+WARNING: [Synth 8-2507] parameter declaration becomes local in beeper with formal parameter declaration list [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/beeper.v:16]
+WARNING: [Synth 8-2507] parameter declaration becomes local in frequency_divider with formal parameter declaration list [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/frequency_divider.v:12]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 343.195 ; gain = 113.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:3]
+	Parameter p1 bound to: 3'b001 
+	Parameter p2 bound to: 3'b010 
+	Parameter p3 bound to: 3'b011 
+	Parameter p4 bound to: 3'b100 
+	Parameter pd bound to: 3'b000 
+INFO: [Synth 8-638] synthesizing module 'edge_detect' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/edge_detect.v:23]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect' (1#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/edge_detect.v:23]
+INFO: [Synth 8-638] synthesizing module 'buffer_tube' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/buffer_tube.v:4]
+INFO: [Synth 8-638] synthesizing module 'frequency_divider' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/frequency_divider.v:4]
+	Parameter target bound to: 1 - type: integer 
+	Parameter divisor bound to: 100000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'frequency_divider' (2#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/frequency_divider.v:4]
+INFO: [Synth 8-638] synthesizing module 'frequency_divider__parameterized0' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/frequency_divider.v:4]
+	Parameter target bound to: 1000 - type: integer 
+	Parameter divisor bound to: 100000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'frequency_divider__parameterized0' (2#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/frequency_divider.v:4]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/buffer_tube.v:32]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/buffer_tube.v:33]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/buffer_tube.v:38]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/buffer_tube.v:49]
+INFO: [Synth 8-256] done synthesizing module 'buffer_tube' (3#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/buffer_tube.v:4]
+INFO: [Synth 8-638] synthesizing module 'set_main' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/set_main.v:4]
+INFO: [Synth 8-256] done synthesizing module 'set_main' (4#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/set_main.v:4]
+INFO: [Synth 8-638] synthesizing module 'setting_tube' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/setting_tube.v:3]
+INFO: [Synth 8-638] synthesizing module 'frequency_divider__parameterized1' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/frequency_divider.v:4]
+	Parameter target bound to: 2 - type: integer 
+	Parameter divisor bound to: 50000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'frequency_divider__parameterized1' (4#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/frequency_divider.v:4]
+INFO: [Synth 8-638] synthesizing module 'bcd_convert' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/bcd_convert.v:3]
+INFO: [Synth 8-256] done synthesizing module 'bcd_convert' (5#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/bcd_convert.v:3]
+WARNING: [Synth 8-689] width (6) of port connection 'current' does not match port width (8) of module 'bcd_convert' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/setting_tube.v:25]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/setting_tube.v:36]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/setting_tube.v:38]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/setting_tube.v:59]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/setting_tube.v:80]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/setting_tube.v:101]
+WARNING: [Synth 8-5788] Register tube_count_reg in module setting_tube is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/setting_tube.v:35]
+WARNING: [Synth 8-5788] Register sw_reg in module setting_tube is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/setting_tube.v:40]
+INFO: [Synth 8-256] done synthesizing module 'setting_tube' (6#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/setting_tube.v:3]
+INFO: [Synth 8-638] synthesizing module 'countdown_tube' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/countdown_tube.v:5]
+INFO: [Synth 8-638] synthesizing module 'beeper' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/beeper.v:5]
+	Parameter t bound to: 1 - type: integer 
+	Parameter intensity bound to: 1000 - type: integer 
+	Parameter total bound to: 2000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'frequency_divider__parameterized2' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/frequency_divider.v:4]
+	Parameter target bound to: 1000 - type: integer 
+	Parameter divisor bound to: 100000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'frequency_divider__parameterized2' (6#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/frequency_divider.v:4]
+INFO: [Synth 8-256] done synthesizing module 'beeper' (7#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/beeper.v:5]
+WARNING: [Synth 8-5788] Register sw_reg in module countdown_tube is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/countdown_tube.v:58]
+INFO: [Synth 8-256] done synthesizing module 'countdown_tube' (8#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/countdown_tube.v:5]
+INFO: [Synth 8-638] synthesizing module 'shift_left' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/shift_left.v:1]
+WARNING: [Synth 8-5788] Register pos_reg in module shift_left is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/shift_left.v:36]
+INFO: [Synth 8-256] done synthesizing module 'shift_left' (9#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/shift_left.v:1]
+WARNING: [Synth 8-689] width (6) of port connection 'corrcet_point' does not match port width (8) of module 'shift_left' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:306]
+WARNING: [Synth 8-689] width (6) of port connection 'mistake_point' does not match port width (8) of module 'shift_left' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:306]
+WARNING: [Synth 8-689] width (6) of port connection 'corrcet_point' does not match port width (8) of module 'shift_left' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:307]
+WARNING: [Synth 8-689] width (6) of port connection 'mistake_point' does not match port width (8) of module 'shift_left' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:307]
+WARNING: [Synth 8-689] width (6) of port connection 'corrcet_point' does not match port width (8) of module 'shift_left' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:308]
+WARNING: [Synth 8-689] width (6) of port connection 'mistake_point' does not match port width (8) of module 'shift_left' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:308]
+WARNING: [Synth 8-689] width (6) of port connection 'corrcet_point' does not match port width (8) of module 'shift_left' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:309]
+WARNING: [Synth 8-689] width (6) of port connection 'mistake_point' does not match port width (8) of module 'shift_left' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:309]
+INFO: [Synth 8-638] synthesizing module 'player_tube' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/player_tube.v:3]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/player_tube.v:50]
+WARNING: [Synth 8-5788] Register sw_reg in module player_tube is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/player_tube.v:30]
+INFO: [Synth 8-256] done synthesizing module 'player_tube' (10#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/player_tube.v:3]
+INFO: [Synth 8-638] synthesizing module 'scan_tube' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/scan_tube.v:3]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/scan_tube.v:286]
+WARNING: [Synth 8-5788] Register now_playing_reg in module scan_tube is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/scan_tube.v:48]
+WARNING: [Synth 8-5788] Register pos_reg in module scan_tube is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/scan_tube.v:71]
+WARNING: [Synth 8-5788] Register msb_reg in module scan_tube is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/scan_tube.v:71]
+WARNING: [Synth 8-5788] Register lsb_reg in module scan_tube is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/scan_tube.v:71]
+WARNING: [Synth 8-5788] Register sw_reg in module scan_tube is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/scan_tube.v:96]
+INFO: [Synth 8-256] done synthesizing module 'scan_tube' (11#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/scan_tube.v:3]
+INFO: [Synth 8-638] synthesizing module 'rejudge_tube' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/rejudge_tube.v:5]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/rejudge_tube.v:53]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/rejudge_tube.v:77]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/rejudge_tube.v:90]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/rejudge_tube.v:103]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/rejudge_tube.v:116]
+INFO: [Synth 8-226] default block is never used [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/rejudge_tube.v:134]
+WARNING: [Synth 8-5788] Register tube_count_reg in module rejudge_tube is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/rejudge_tube.v:47]
+WARNING: [Synth 8-5788] Register sw_reg in module rejudge_tube is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/rejudge_tube.v:57]
+INFO: [Synth 8-256] done synthesizing module 'rejudge_tube' (12#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/rejudge_tube.v:5]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register rejudge_player_reg in module main. [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:418]
+WARNING: [Synth 8-5788] Register sa4_en_reg in module main is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:309]
+WARNING: [Synth 8-5788] Register sa3_en_reg in module main is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:308]
+WARNING: [Synth 8-5788] Register sa2_en_reg in module main is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:307]
+WARNING: [Synth 8-5788] Register sa1_en_reg in module main is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:306]
+WARNING: [Synth 8-5788] Register ss4_en_reg in module main is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:309]
+WARNING: [Synth 8-5788] Register ss3_en_reg in module main is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:308]
+WARNING: [Synth 8-5788] Register ss2_en_reg in module main is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:307]
+WARNING: [Synth 8-5788] Register ss1_en_reg in module main is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:306]
+WARNING: [Synth 8-5788] Register rejudge_player_reg in module main is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:418]
+WARNING: [Synth 8-5788] Register rejudge_score_reg in module main is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:421]
+WARNING: [Synth 8-5788] Register rejudge_pos_reg in module main is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:422]
+WARNING: [Synth 8-5788] Register rejudge_en_reg in module main is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:491]
+INFO: [Synth 8-256] done synthesizing module 'main' (13#1) [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:3]
+WARNING: [Synth 8-3331] design scan_tube has unconnected port num_people[5]
+WARNING: [Synth 8-3331] design scan_tube has unconnected port num_people[4]
+WARNING: [Synth 8-3331] design scan_tube has unconnected port num_people[3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 383.445 ; gain = 153.531
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 383.445 ; gain = 153.531
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/constrs_1/new/constrs.xdc]
+Finished Parsing XDC File [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/constrs_1/new/constrs.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/constrs_1/new/constrs.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 740.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 740.539 ; gain = 510.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 740.539 ; gain = 510.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 740.539 ; gain = 510.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'cur_set_reg' in module 'set_main'
+INFO: [Synth 8-5544] ROM "num_people" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cur_set" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cur_set" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cur_set" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/beeper.v:21]
+WARNING: [Synth 8-6014] Unused sequential element seconds_reg was removed.  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/countdown_tube.v:25]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/shift_left.v:51]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/shift_left.v:50]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/shift_left.v:40]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/shift_left.v:36]
+INFO: [Synth 8-5544] ROM "seg_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sw" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sw" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sw" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sw" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sw" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sw" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sw" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rejudge_player" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+*
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_set_reg' using encoding 'sequential' in module 'set_main'
+WARNING: [Synth 8-327] inferring latch for variable 'get_chance_lock_reg' [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/main.v:247]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 740.539 ; gain = 510.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 12    
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 9     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 101   
+	   2 Input      3 Bit       Adders := 16    
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 28    
+	                8 Bit    Registers := 19    
+	                6 Bit    Registers := 8     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 63    
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 12    
+	   4 Input      8 Bit        Muxes := 9     
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 51    
+	   8 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 2     
+	   7 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 9     
+	   4 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 4     
+	   7 Input      5 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 1     
+	   9 Input      5 Bit        Muxes := 2     
+	   8 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 79    
+	   7 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 6     
+	   5 Input      4 Bit        Muxes := 3     
+	   6 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   6 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 39    
+	   5 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 6     
+	  12 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 13    
+	   6 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module main 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 8     
+	                8 Bit    Registers := 8     
+	                6 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 8     
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 1     
+Module edge_detect 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module frequency_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module frequency_divider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module buffer_tube 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+Module set_main 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 4     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module frequency_divider__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bcd_convert 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 10    
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 7     
+Module setting_tube 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  12 Input      8 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 4     
+	   7 Input      5 Bit        Muxes := 4     
+	  12 Input      1 Bit        Muxes := 1     
+Module frequency_divider__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module beeper 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module countdown_tube 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module shift_left 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 2     
++---Registers : 
+	               27 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 1     
+Module player_tube 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+Module scan_tube 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 6     
+	   5 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 2     
+	   7 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   4 Input      4 Bit        Muxes := 6     
+	   5 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 2     
+Module rejudge_tube 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   7 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   9 Input      5 Bit        Muxes := 2     
+	   8 Input      5 Bit        Muxes := 2     
+	   7 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "p_1_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "fd/clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fd_tc/clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fd/clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fd_tc/clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fd/clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "countdown_beep/fd/clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fd_tc/clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element countdown_beep/cnt_reg was removed.  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/beeper.v:21]
+WARNING: [Synth 8-6014] Unused sequential element seconds_reg was removed.  [D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.srcs/sources_1/new/countdown_tube.v:25]
+INFO: [Synth 8-5545] ROM "fd_tc/clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "seg_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "fd/clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fd_tc/clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fd/clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fd_tc/clkout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design scan_tube has unconnected port num_people[5]
+WARNING: [Synth 8-3331] design scan_tube has unconnected port num_people[4]
+WARNING: [Synth 8-3331] design scan_tube has unconnected port num_people[3]
+INFO: [Synth 8-3886] merging instance 'score_shift_3/u/trig1_reg' (FDC) to 'score_shift_4/u/trig1_reg'
+INFO: [Synth 8-3886] merging instance 'score_shift_2/u/trig1_reg' (FDC) to 'score_shift_4/u/trig1_reg'
+INFO: [Synth 8-3886] merging instance 'score_shift_1/u/trig1_reg' (FDC) to 'score_shift_4/u/trig1_reg'
+INFO: [Synth 8-3886] merging instance 'score_shift_3/u/trig2_reg' (FDC) to 'score_shift_1/u/trig2_reg'
+INFO: [Synth 8-3886] merging instance 'score_shift_2/u/trig2_reg' (FDC) to 'score_shift_1/u/trig2_reg'
+INFO: [Synth 8-3886] merging instance 'score_shift_1/u/trig3_reg' (FDC) to 'score_shift_2/u/trig3_reg'
+INFO: [Synth 8-3886] merging instance 'score_shift_1/u/trig2_reg' (FDC) to 'score_shift_4/u/trig2_reg'
+INFO: [Synth 8-3886] merging instance 'score_shift_4/u/trig3_reg' (FDC) to 'score_shift_3/u/trig3_reg'
+INFO: [Synth 8-3886] merging instance 'rejudge_score_reg[7]' (FDC) to 'rejudge_score_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rejudge_score_reg[6] )
+INFO: [Synth 8-3886] merging instance 'rejudge_player_reg[1]' (FDR) to 'rejudge_player_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rejudge_player_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\st/scan_cnt_reg[4] )
+INFO: [Synth 8-3886] merging instance 'bt/seg_en_reg[0]' (FDP) to 'bt/seg_en_reg[2]'
+INFO: [Synth 8-3886] merging instance 'bt/seg_en_reg[1]' (FDP) to 'bt/seg_en_reg[3]'
+INFO: [Synth 8-3886] merging instance 'bt/seg_en_reg[2]' (FDP) to 'bt/seg_en_reg[4]'
+INFO: [Synth 8-3886] merging instance 'countdown_tube_u/seg_en_reg[2]' (FDP) to 'countdown_tube_u/seg_en_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bt/seg_en_reg[3]' (FDP) to 'bt/seg_en_reg[5]'
+INFO: [Synth 8-3886] merging instance 'countdown_tube_u/seg_en_reg[3]' (FDP) to 'countdown_tube_u/seg_en_reg[7]'
+INFO: [Synth 8-3886] merging instance 'player_tube_u/seg_en_reg[3]' (FDP) to 'player_tube_u/seg_en_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bt/seg_en_reg[4]' (FDP) to 'bt/seg_en_reg[6]'
+INFO: [Synth 8-3886] merging instance 'countdown_tube_u/seg_en_reg[4]' (FDP) to 'countdown_tube_u/seg_en_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\player_tube_u/seg_en_reg[4] )
+INFO: [Synth 8-3886] merging instance 'bt/seg_en_reg[5]' (FDP) to 'bt/seg_en_reg[7]'
+INFO: [Synth 8-3886] merging instance 'setting_tube_u/seg_en_reg[5]' (FDP) to 'setting_tube_u/seg_en_reg[7]'
+INFO: [Synth 8-3886] merging instance 'countdown_tube_u/seg_en_reg[5]' (FDP) to 'countdown_tube_u/seg_en_reg[7]'
+INFO: [Synth 8-3886] merging instance 'countdown_tube_u/seg_en_reg[6]' (FDP) to 'countdown_tube_u/seg_en_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\setting_tube_u/seg_en_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\countdown_tube_u/seg_en_reg[7] )
+INFO: [Synth 8-3886] merging instance 'score_shift_2/u/trig3_reg' (FDC) to 'score_shift_3/u/trig3_reg'
+WARNING: [Synth 8-3332] Sequential element (set_main_u/num_people_reg[5]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (set_main_u/num_people_reg[4]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (set_main_u/num_people_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (setting_tube_u/seg_en_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (countdown_tube_u/seg_en_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (player_tube_u/seg_en_reg[4]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (st/scan_cnt_reg[4]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (num_people_reg[5]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (num_people_reg[4]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (num_people_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (rejudge_player_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (rejudge_score_reg[6]) is unused and will be removed from module main.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (rejudge_pos_reg_P)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rejudge_score_reg[0]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rejudge_score_reg[1]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rejudge_score_reg[2]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rejudge_score_reg[4]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rejudge_score_reg[3]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rejudge_score_reg[5]_C )
+WARNING: [Synth 8-3332] Sequential element (rejudge_pos_reg_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (rejudge_score_reg[5]_C) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (rejudge_score_reg[4]_C) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (rejudge_score_reg[3]_C) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (rejudge_score_reg[2]_C) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (rejudge_score_reg[1]_C) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (rejudge_score_reg[0]_C) is unused and will be removed from module main.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 740.539 ; gain = 510.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+------------+---------------+----------------+
+|Module Name  | RTL Object | Depth x Width | Implemented As | 
++-------------+------------+---------------+----------------+
+|setting_tube | seg_out    | 32x8          | LUT            | 
+|rejudge_tube | seg_out    | 32x8          | LUT            | 
+|setting_tube | seg_out    | 32x8          | LUT            | 
+|rejudge_tube | seg_out    | 32x8          | LUT            | 
++-------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 768.387 ; gain = 538.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 770.121 ; gain = 540.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 821.273 ; gain = 591.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 821.273 ; gain = 591.359
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 821.273 ; gain = 591.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 821.273 ; gain = 591.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 821.273 ; gain = 591.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 821.273 ; gain = 591.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 821.273 ; gain = 591.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   116|
+|3     |LUT1   |    37|
+|4     |LUT2   |   392|
+|5     |LUT3   |   153|
+|6     |LUT4   |   180|
+|7     |LUT5   |   121|
+|8     |LUT6   |   347|
+|9     |MUXF7  |    21|
+|10    |MUXF8  |     1|
+|11    |FDCE   |   964|
+|12    |FDPE   |    50|
+|13    |FDRE   |    64|
+|14    |LDC    |    16|
+|15    |IBUF   |    18|
+|16    |OBUF   |    23|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+-------------------------------------+------+
+|      |Instance           |Module                               |Cells |
++------+-------------------+-------------------------------------+------+
+|1     |top                |                                     |  2504|
+|2     |  bt               |buffer_tube                          |   156|
+|3     |    fd             |frequency_divider_12                 |    71|
+|4     |    fd_tc          |frequency_divider__parameterized0_13 |    70|
+|5     |  countdown_tube_u |countdown_tube                       |   316|
+|6     |    countdown_beep |beeper                               |   103|
+|7     |      fd           |frequency_divider__parameterized2    |    71|
+|8     |    fd             |frequency_divider_10                 |    71|
+|9     |    fd_tc          |frequency_divider__parameterized0_11 |    70|
+|10    |  next_stage_u     |edge_detect                          |     5|
+|11    |  player_tube_u    |player_tube                          |   125|
+|12    |    fd_tc          |frequency_divider__parameterized0_9  |    71|
+|13    |  rj_tube          |rejudge_tube                         |   244|
+|14    |    fd             |frequency_divider                    |    71|
+|15    |    fd_tc          |frequency_divider__parameterized0_8  |    70|
+|16    |  score_shift_1    |shift_left                           |   125|
+|17    |  score_shift_2    |shift_left_0                         |   125|
+|18    |  score_shift_3    |shift_left_1                         |   126|
+|19    |    u              |edge_detect_7                        |     1|
+|20    |  score_shift_4    |shift_left_2                         |   134|
+|21    |    u              |edge_detect_6                        |    10|
+|22    |  set_main_u       |set_main                             |    35|
+|23    |    u              |edge_detect_5                        |    10|
+|24    |  setting_tube_u   |setting_tube                         |   207|
+|25    |    fd             |frequency_divider__parameterized1_3  |    71|
+|26    |    fd_tc          |frequency_divider__parameterized0_4  |    70|
+|27    |  st               |scan_tube                            |   361|
+|28    |    fd             |frequency_divider__parameterized1    |    71|
+|29    |    fd_tc          |frequency_divider__parameterized0    |    70|
++------+-------------------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 821.273 ; gain = 591.359
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 821.273 ; gain = 234.266
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 821.273 ; gain = 591.359
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 172 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 3 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LDC => LDCE: 13 instances
+  LDC => LDCE (inverted pins: G): 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+147 Infos, 65 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 821.273 ; gain = 595.766
+INFO: [Common 17-1381] The checkpoint 'D:/Program/Digital/CS207_Multi-Channel_Answering_Machine/CS207_Multi-Channel_Answering_Machine.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 821.273 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 19 13:27:11 2019...
